@@ -2,7 +2,7 @@ const check = require('express-validator');
 
 const checkfunction = check.check;
 
-const {validationResult} = checkfunction;
+const {validationResult} = check;
 
 exports.getPosts = (req,res,next) =>{
     res.status(200).json(
