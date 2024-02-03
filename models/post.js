@@ -15,8 +15,9 @@ const postSchema = new Schema({
         required: true
     },
     creator: {
-        type: Object,
-        required: String.Object
-    },
-    {timestamps: true}
-});
+        type: String, // Corrected type to String
+        required: true // Corrected required property
+    }
+}, { timestamps: true });
+
+module.exports = mongoose.model('Post' , postSchema);
